@@ -15,7 +15,9 @@ export default function TopScoresMemo() {
 
     useEffect(() => {
         let newGameStatus = {
-            forceUpdateTopScores: () => setIsUpdated(!isUpdated)
+            forceUpdateTopScores:function () {
+                return setIsUpdated(!isUpdated);
+            }
         };
         updateGameStatus(newGameStatus);
     }, []);

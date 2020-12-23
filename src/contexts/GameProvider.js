@@ -16,7 +16,7 @@ export const FromGameProvider = () => useContext(GameContext);
 export default function GameProvider(props) {
    
     const [level, setLevel] = useState(16); //16 --> Easy, 52 --> Hard 
-    const [timeLimit,setTimeLimit] = useState("02:00");//01:30 --> Easy, 03:30 -> Hard
+    const [timeLimit,setTimeLimit] = useState("01:30");//01:30 --> Easy, 06:00 -> Hard
     const [topScores, setTopScores] = useState(defaultTopScores);
     const [cardsStatus, setCardsStatus] = useState();
     
@@ -60,7 +60,7 @@ export default function GameProvider(props) {
     const changeLevel = (level) => {
         setLevel(level);
         level === 16 ? setTimeLimit("01:30")
-                    : setTimeLimit("03:30");
+                    : setTimeLimit("06:00");
     };
 
     const getTopScoresFromDB = async () => {
