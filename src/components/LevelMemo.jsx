@@ -11,19 +11,19 @@ export default function LevelMemo() {
 
     return (
         <div className="div-level">
-                <input  id="hard_level" className="toggle-left"
-                        type="radio" name="level" value="52" 
-                        onChange={handleLevelChange}  
-                        checked ={level === 52}
-                />
-                <label htmlFor="hard_level" className="label-button">Hard</label>
-
-                <input  id="easy_level" className="toggle-right"
+                <input  id="easy_level" className="toggle-left"
                         type="radio" name="level" value="16" 
                         onChange={handleLevelChange}  
                         checked ={level === 16}
                 />
                 <label htmlFor="easy_level" className="label-button">Easy</label>
+
+                <input  id="hard_level" className="toggle-right"
+                        type="radio" name="level" value="52" 
+                        onChange={handleLevelChange}  
+                        checked ={level === 52}
+                />
+                <label htmlFor="hard_level" className="label-button">Hard</label>
         </div>
     )
 } 

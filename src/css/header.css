@@ -100,13 +100,22 @@
   .dropdown-content button {
     color: black;
     padding: 8px 0px;
-    text-decoration: none;
     display: block;
     border: none;
     width: 100%;
     background-color: #f5f0f03b;
   }
   
+  .dropdown-content input {
+    color: rgb(0, 0, 0);
+    padding: 8px 10px;
+    margin: 0px;
+    display: block;
+    border: 2px solid rgb(1, 75, 88);
+    width: 100%;
+    background-color: #d6ffff91;
+  }
+
   .dropdown-content button:hover {background-color: rgba(1, 106, 114, 0.5);}
   
   .dropdown:hover .dropdown-content {display: block;}

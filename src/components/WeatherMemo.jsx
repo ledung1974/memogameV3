@@ -15,16 +15,20 @@ export default function WeatherMemo() {
             const infor = await response.json();
             setTemp(infor.main.temp);
         }
-        catch (err){
+        catch (err) {
             setTemp("?");
         }
-            
+
     }
-    
+
     const handleSelectCity = (event) => {
         setCityName(event.target.value);
     }
-    
+
+    const handleInputCity = (event) => {
+        setCityName(event.target.value);
+    }
+
     return (
         <div className="temperature">
             <div className="div-temp">
@@ -33,13 +37,19 @@ export default function WeatherMemo() {
             <div className="dropdown">
                 <button className="dropbtn">{cityName}</button>
                 <div class="dropdown-content">
+                    <input type="text"
+                        maxLength="20"
+                        placeholder="City name"
+                        onChange={handleInputCity}
+                    />
                     <button value="Saskatoon" onClick={handleSelectCity}>Saskatoon</button>
-                    <button value="Edmonton" onClick={handleSelectCity}>Edmonton</button>
-                    <button value="Calgary" onClick={handleSelectCity}>Calgary</button>
                     <button value="Hanoi" onClick={handleSelectCity}>Hanoi</button>
+                    <button value="Tokyo" onClick={handleSelectCity}>Tokyo</button>
+                    <button value="Vancouver" onClick={handleSelectCity}>Vancouver</button>
+                    <button value="Toronto" onClick={handleSelectCity}>Toronto</button>
                 </div>
             </div>
-            
+
 
         </div>
     )

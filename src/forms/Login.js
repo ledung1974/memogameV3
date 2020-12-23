@@ -40,7 +40,7 @@ export default function Login(props) {
                             type="password"
                             name="password"
                             maxLength="20"
-                            placeholder="Your password"
+                            placeholder="password"
                             disabled={isSubmitting}
                             onChange={(event) => setPassword(event.target.value)}
                         />
@@ -48,7 +48,7 @@ export default function Login(props) {
 
                 </div>
                 <div>
-                    <button className="button-login" type="submit" disabled={isSubmitting}>Start Game</button>
+                    <button className="button-login" type="submit" disabled={isSubmitting}>Login</button>
                 </div>
                 <button disabled={isSubmitting} onClick={props.showResetPassword} id="reset-password-button">Reset password ?</button>
             </form>
