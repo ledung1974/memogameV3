@@ -26,7 +26,7 @@ export default function AlertMemo() {
                         <h2>{alertInfor.alertHeader}</h2>
                     </div>
                     <div className="alert-content-div">
-                        <p>{alertInfor.alertContent}</p>
+                        <pre>{alertInfor.alertContent}</pre>
                     </div>
                     <div className="alert-button-div">
                         <button type="button" onClick={handleClickButton1}>{alertInfor.alertButtonName}</button>

@@ -1,3 +1,4 @@
+/*-- Disable mouse select and drag on the images --*/
 img {
   -webkit-user-select: none;
   -khtml-user-select: none;
