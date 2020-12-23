@@ -93,7 +93,7 @@ export default function TimerHook() {
                     isTopScoresChanged = false; 
                 }else{
                     //updateGameStatus({isTopScoresChanged:false, numberCardsOnDeck:level});
-                    gameStatus.isTopScoresChanged=true;
+                    gameStatus.isTopScoresChanged=false;
                 }
                 //Update Best Score of current player
                 console.log()
