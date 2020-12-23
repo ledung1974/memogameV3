@@ -96,9 +96,7 @@ export default function TimerHook() {
                     gameStatus.isTopScoresChanged=false;
                 }
                 //Update Best Score of current player
-                console.log()
                 let isBestScoreUpdate = updateBestScore(level, player, gameStatus.yourCount, gameStatus.yourCount)
-                console.log(isBestScoreUpdate);
                 if (isBestScoreUpdate) {
                     savePlayer(player);//Write to Database
                     updatePlayer(player);
