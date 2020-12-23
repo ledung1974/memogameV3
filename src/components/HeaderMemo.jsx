@@ -31,7 +31,6 @@ Your best score in Easy level:[ ${player.bestEasyScore}]
 Your best clicks in Easy level:[ ${player.bestEasyClicks}]
 Your best score in Hard level:[ ${player.bestHardScore}]
 Your best click in Hard level:[ ${player.bestHardClicks}]
-Your order in the world:[111]
             `,
             alertButtonName: "Close",
             isButton2: false,
