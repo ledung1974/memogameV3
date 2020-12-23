@@ -27,6 +27,7 @@ export default function Login(props) {
                             type="email"
                             name="email"
                             placeholder="Email"
+                            maxLength="30"
                             disabled={isSubmitting}
                             onChange={(event) => setEmail(event.target.value)}
                         />
@@ -38,6 +39,7 @@ export default function Login(props) {
                             required
                             type="password"
                             name="password"
+                            maxLength="20"
                             placeholder="Your password"
                             disabled={isSubmitting}
                             onChange={(event) => setPassword(event.target.value)}

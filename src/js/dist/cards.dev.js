@@ -55,7 +55,8 @@ function createCards(cardTotal) {
           }
         }
       }
-    }
+    } //return shuffleArray(cards);
+
   } catch (err) {
     _didIteratorError = true;
     _iteratorError = err;
@@ -71,5 +72,5 @@ function createCards(cardTotal) {
     }
   }
 
-  return shuffleArray(cards); //return cards; //don' shuffle for debug
+  return cards; //don' shuffle for debug
 }
