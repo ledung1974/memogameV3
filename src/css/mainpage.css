@@ -1,0 +1,53 @@
+/* Styles for DeckMemo -------*/
+.div-deck {
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  padding: 0px;
+  margin: 0px;
+  overflow-y: auto;
+}
+
+.divgrid-full-deck {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1%;
+  padding: 1% 1%;
+  margin: 0px;
+}
+
+.divgrid-easy-deck {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 3%;
+  padding: 5% 2%;
+  margin: 0px;
+}
+
+.image-card {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  padding: 0px 0px;
+  margin: 0px;
+  justify-self: center;
+}
+
+.image-goodjob {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px;
+  margin: 0px;
+  justify-self: center;
+  cursor: default;
+}
+
+.image-card:hover {
+  transition: 0.5s;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #706f6fce;
+  padding: 0px 0px;
+}

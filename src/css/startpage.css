@@ -1,0 +1,69 @@
+.start-container {
+  text-align: center;
+  width: 100%;
+}
+  
+.start-logo {
+    height: 20vmin;
+    pointer-events: auto;
+    padding: 0px;
+    margin:0px;
+  }
+  
+@media (prefers-reduced-motion: no-preference) {
+    .start-logo {
+      animation: start-logo-spin infinite 20s linear;
+    }
+}
+  
+@keyframes start-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
+.start-header {
+    background-color: #282c34;
+    padding: 5vh 0px 0px 0px;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+.start-header h1 {
+    color: white;
+    font-size: calc(14px + 5vh);
+    padding:0px;
+    margin: 1vh 0px 0px 0px;
+}
+  
+.start-header span {
+    color: rgb(250, 73, 3);
+    font-size: calc(4px + 1vhm);
+    padding:0px 0px 2vh 0px;
+}
+
+.start-main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer{
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+footer > p {
+  color: white;
+  text-align: center;
+  font-size: 2.2vh;
+}

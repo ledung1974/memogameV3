@@ -1,0 +1,63 @@
+{
+  "players" : {
+    "07MR0a8MAeZJRIR3A2kyIpmFg5D3" : {
+      "bestEasyClick" : 60,
+      "bestEasyScore" : 600,
+      "bestHardClick" : 600,
+      "bestHardScore" : 6000,
+      "email" : "ledung1974@gmail.com",
+      "playerName" : "Dung Le",
+      "uid" : "07MR0a8MAeZJRIR3A2kyIpmFg5D3"
+    },
+    "1GNbtG4T7perorK9yB7fwSpEDOr2" : {
+      "bestEasyClick" : 60,
+      "bestEasyScore" : 600,
+      "bestHardClick" : 600,
+      "bestHardScore" : 6000,
+      "email" : "huongntt13@gmail.com",
+      "playerName" : "Helen Nguyen",
+      "uid" : "1GNbtG4T7perorK9yB7fwSpEDOr2"
+    },
+    "zSNIBWmodDQSmM6bEwYB6YOTB2h2" : {
+      "bestEasyClick" : 60,
+      "bestEasyScore" : 600,
+      "bestHardClick" : 600,
+      "bestHardScore" : 6000,
+      "email" : "lebit2006@gmail.com",
+      "playerName" : "Le Bo",
+      "uid" : "zSNIBWmodDQSmM6bEwYB6YOTB2h2"
+    }
+  },
+  "topscoreseasy" : [ null, {
+    "clicks" : 16,
+    "name" : "Dung Le",
+    "score" : 13,
+    "uid" : "07MR0a8MAeZJRIR3A2kyIpmFg5D3"
+  }, {
+    "clicks" : 15,
+    "name" : "Helen Nguyen",
+    "score" : 20,
+    "uid" : "1GNbtG4T7perorK9yB7fwSpEDOr2"
+  }, {
+    "clicks" : 16,
+    "name" : "Le Bo",
+    "score" : 22,
+    "uid" : "zSNIBWmodDQSmM6bEwYB6YOTB2h2"
+  } ],
+  "topscoreshard" : [ null, {
+    "clicks" : 139,
+    "name" : "Helen Nguyen",
+    "score" : 218,
+    "uid" : "1GNbtG4T7perorK9yB7fwSpEDOr2"
+  }, {
+    "clicks" : 162,
+    "name" : "Le Bo",
+    "score" : 242,
+    "uid" : "zSNIBWmodDQSmM6bEwYB6YOTB2h2"
+  }, {
+    "clicks" : 100,
+    "name" : "Dung Le",
+    "score" : 276,
+    "uid" : "07MR0a8MAeZJRIR3A2kyIpmFg5D3"
+  } ]
+}
