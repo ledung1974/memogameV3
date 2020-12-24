@@ -4,6 +4,7 @@ import PlayerProvider from "./contexts/PlayerProvider";
 import GameProvider from "./contexts/GameProvider";
 import Pages from "./pages";
 import AlertMemo from "./pages/AlertMemo";
+import AudioMemo from "./components/AudioMemo";
 import "./css/app.css";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
           <PlayerProvider>
             <Pages />
             <AlertMemo />
+            <AudioMemo />
           </PlayerProvider>
         </GameProvider>
       </StatusProvider>
