@@ -45,7 +45,6 @@ export function soundGame(eventname) {
     let obj = scrSounds.find(element => element.eventname===eventname);
     if (obj){
         let s = document.getElementById(obj.id);
-        s.load();
         s.play();
     }    
 }
