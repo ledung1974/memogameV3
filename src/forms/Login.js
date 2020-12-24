@@ -40,7 +40,7 @@ export default function Login(props) {
                             type="password"
                             name="password"
                             maxLength="20"
-                            placeholder="password"
+                            placeholder="Password"
                             disabled={isSubmitting}
                             onChange={(event) => setPassword(event.target.value)}
                         />

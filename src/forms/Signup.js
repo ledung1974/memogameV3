@@ -45,7 +45,7 @@ export default function Signup(props) {
                             type="password"
                             name="password"
                             maxLength="20"
-                            placeholder="Your password"
+                            placeholder="Password"
                             disabled={isSubmitting}
                             onChange={(event) => setPassword1(event.target.value)}
                         />
@@ -58,7 +58,7 @@ export default function Signup(props) {
                             type="password"
                             name="password"
                             maxLength="20"
-                            placeholder="Type again your password"
+                            placeholder="Type again password"
                             disabled={isSubmitting}
                             onChange={(event) => setPassword2(event.target.value)}
                         />
@@ -71,7 +71,7 @@ export default function Signup(props) {
                             type="text"
                             name="playerName"
                             maxLength="20"
-                            placeholder="Name to display (max 20)"
+                            placeholder="Name to display"
                             disabled={isSubmitting}
                             onChange={(event) => setplayerName(event.target.value)}
                         />
