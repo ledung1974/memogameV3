@@ -50,10 +50,10 @@ export default function Login(props) {
                 <div>
                     <button className="button-login marpad1 marpad-1" type="submit" disabled={isSubmitting}>Login</button>
                 </div>
-                
             </form>
             <div className="sign-up-link">
-                <span>Please <button id="sign-up-button" disabled={isSubmitting} onClick={props.showSignUp}> Sign Up </button> for the first time to play</span>
+                <span> Please <button type="button" id="sign-up-button" disabled={isSubmitting} onClick={props.showSignUp}>Sign Up</button> for the first time to play
+                </span>
             </div>
         </div>
     )
