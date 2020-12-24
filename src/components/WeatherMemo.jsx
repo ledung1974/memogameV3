@@ -7,6 +7,8 @@ export default function WeatherMemo() {
     const [temp, setTemp] = useState();
     useEffect(() => {
         getWeatherApi();
+    
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [cityName]);
 
     async function getWeatherApi() {

@@ -20,6 +20,7 @@ export default function TopScoresMemo() {
             }
         };
         updateGameStatus(newGameStatus);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const updateTopScoresOnFirebase = async () => {
