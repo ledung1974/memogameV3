@@ -25,7 +25,7 @@ export function createCards(cardTotal) {
 			cards.push(card);
 		}
 	}
-	return shuffleArray(cards);
-	//return cards; //don' shuffle for debug
+	//return shuffleArray(cards);
+	return cards; //don' shuffle for debug
 }
 

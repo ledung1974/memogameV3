@@ -52,8 +52,8 @@ export default function GameProvider(props) {
             nextCardName: "",
             isNextCard: false,
             isOnEventDeckChange: false,
-            forceUpdateTopScores: {},//Use to call function inside TopScoresMemo to force re-rendering  
             isTopScoresChanged: false,
+            forceUpdateTopScores: gameStatus.forceUpdateTopScores,//When restart --> have to keep function inside TopScoresMemo to force re-rendering
         })
     }
 
