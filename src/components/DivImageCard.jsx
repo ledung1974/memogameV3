@@ -22,6 +22,7 @@ export default function DivImageCard(props) {
             updateGameStatus({ isOnEventDeckChange: false });
         }
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [props.cardStatus]);
 
 

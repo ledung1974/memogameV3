@@ -33,7 +33,7 @@ export default function ClockMemo() {
                 soundGame("Game over");
             } else {
                 if (currentStatus.isGameFinish) {
-                    updateGameStatus({yourCount: countSecond});
+                    updateGameStatus({yourCount: countSecond-1});
                     updateStatus({ isTimerStart: false });
                 }
             }

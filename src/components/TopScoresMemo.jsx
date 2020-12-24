@@ -20,7 +20,7 @@ export default function TopScoresMemo() {
             }
         };
         updateGameStatus(newGameStatus);
-    }, [isUpdated]);
+    }, []);
 
     const updateTopScoresOnFirebase = async () => {
         if (!currentStatus.isTimerStart && currentStatus.isGameFinish) {

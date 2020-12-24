@@ -11,8 +11,8 @@ let delay = 0;
 export default function TimerHook() {
     const [countMiliSecond, setCountMiliSecond] = useState(0);
     
-    const { currentStatus, updateStatus } = FromStatusProvider();
-    const {level,gameStatus, updateGameStatus, removeCardFromDeck,flipBackPairCards,topScores} = FromGameProvider();
+    const { currentStatus } = FromStatusProvider();
+    const {level,gameStatus, removeCardFromDeck,flipBackPairCards,topScores} = FromGameProvider();
     const {player,updatePlayer} = FromPlayerProvider();
 
     const timerInMiliSecond = useRef(null);
