@@ -35,11 +35,11 @@ export default function DivImageCard(props) {
                 if (gameStatus.flippedCards.length < 2) {
                     gameStatus.flippedCards.push(props.cardStatus.cardName);
                     gameStatus.thisSetStates.push(props.keyCard);
-                    gameStatus.yourClicks +=1;
+                    let temp = gameStatus.yourClicks +=1;
                     updateGameStatus({
                         flippedCards: gameStatus.flippedCards,
                         thisSetStates: gameStatus.thisSetStates,
-                        //yourClicks: gameStatus.yourClicks,//counting your clicks to flip a card
+                        yourClicks: temp,//counting your clicks to flip a card
                     });
 
                     updateCardStatus(props.keyCard, { isShowed: !props.cardStatus.isShowed });
@@ -65,13 +65,13 @@ export default function DivImageCard(props) {
         }
         else {//Accept click on the next-card during a pair of previous cards on processing
             if (!gameStatus.isNextCard) {
-                gameStatus.yourClicks +=1;
+                let temp = gameStatus.yourClicks +=1;
                 updateGameStatus({
                     isOnEventDeckChange: false,
                     thisSetStatesNextCard: props.keyCard,
                     nextCardName: props.cardStatus.cardName,
                     isNextCard: true,
-                    //yourClicks: gameStatus.yourClicks,//counting your clicks to flip a card
+                    yourClicks: temp,//counting your clicks to flip a card
                 });
                 updateCardStatus(props.keyCard, { isShowed: !props.cardStatus.isShowed });
                 soundGame("Flip a card");

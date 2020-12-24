@@ -84,7 +84,7 @@ export default function TimerHook() {
         } else {
             if (currentStatus.isGameFinish && gameStatus.numberCardsOnDeck===level){
                 //update TopScores
-                let isTopScoresChanged = updateTopScores(player.uid, player.playerName, gameStatus.yourCount, gameStatus.yourCount, topScores);
+                let isTopScoresChanged = updateTopScores(player.uid, player.playerName, gameStatus.yourCount, gameStatus.yourClicks, topScores);
                 //Call function inside TopScoresMemo to force re-rendering
                 if (isTopScoresChanged) { 
                     //updateGameStatus({isTopScoresChanged:true, numberCardsOnDeck:level});
@@ -96,7 +96,7 @@ export default function TimerHook() {
                     gameStatus.isTopScoresChanged=false;
                 }
                 //Update Best Score of current player
-                let isBestScoreUpdate = updateBestScore(level, player, gameStatus.yourCount, gameStatus.yourCount)
+                let isBestScoreUpdate = updateBestScore(level, player, gameStatus.yourCount, gameStatus.yourClicks)
                 if (isBestScoreUpdate) {
                     savePlayer(player);//Write to Database
                     updatePlayer(player);
