@@ -18,7 +18,10 @@ export default function WeatherMemo() {
                 setInputCityName("City not found !");
                 setCityName(defaultCity)
             }
-            else{setTemp(infor.main.temp)}
+            else{
+                setTemp(infor.main.temp)
+                setInputCityName("");
+            }
         }
         catch (err) {
             setTemp("?");
