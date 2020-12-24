@@ -108,12 +108,12 @@
   
   .dropdown-content input {
     color: rgb(0, 0, 0);
-    padding: 8px 10px;
+    padding: 5px 10px;
     margin: 0px;
     display: block;
-    border: 2px solid rgb(1, 75, 88);
+    border: 1px solid rgb(189, 113, 0);
     width: 100%;
-    background-color: #d6ffff91;
+    background-color: #f8cb86;
   }
 
   .dropdown-content button:hover {background-color: rgba(1, 106, 114, 0.5);}

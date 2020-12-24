@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
 export default function WeatherMemo() {
-    const [cityName, setCityName] = useState("Saskatoon");
+    const defaultCity = "Saskatoon";
+    let [inputCityName, setInputCityName] = useState("");
+    let [cityName, setCityName] = useState(defaultCity);
     const [temp, setTemp] = useState();
     useEffect(() => {
         getWeatherApi();
-
     }, [cityName]);
 
     async function getWeatherApi() {
@@ -13,7 +14,11 @@ export default function WeatherMemo() {
         try {
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${appid}`)
             const infor = await response.json();
-            setTemp(infor.main.temp);
+            if (infor.cod==="404"){
+                setInputCityName("City not found !");
+                setCityName(defaultCity)
+            }
+            else{setTemp(infor.main.temp)}
         }
         catch (err) {
             setTemp("?");
@@ -26,9 +31,20 @@ export default function WeatherMemo() {
     }
 
     const handleInputCity = (event) => {
-        setCityName(event.target.value);
+        setInputCityName(event.target.value);
     }
 
+    const handleEnterKey = (event) => {
+        if (event.key === "Enter") {
+            setCityName(inputCityName);
+        }
+    }
+    const handleMouseLeave = (event) => {
+        if (inputCityName==="City not found !") {
+            setInputCityName("");
+        }
+    }
+    
     return (
         <div className="temperature">
             <div className="div-temp">
@@ -36,17 +52,17 @@ export default function WeatherMemo() {
             </div>
             <div className="dropdown">
                 <button className="dropbtn">{cityName}</button>
-                <div class="dropdown-content">
+                <div class="dropdown-content" >
                     <input type="text"
                         maxLength="20"
-                        placeholder="City name"
+                        value={inputCityName}
+                        placeholder="Enter city name"
                         onChange={handleInputCity}
+                        onKeyPress={handleEnterKey}
+                        onMouseLeave={handleMouseLeave}
                     />
                     <button value="Saskatoon" onClick={handleSelectCity}>Saskatoon</button>
                     <button value="Hanoi" onClick={handleSelectCity}>Hanoi</button>
-                    <button value="Tokyo" onClick={handleSelectCity}>Tokyo</button>
-                    <button value="Vancouver" onClick={handleSelectCity}>Vancouver</button>
-                    <button value="Toronto" onClick={handleSelectCity}>Toronto</button>
                 </div>
             </div>
 
