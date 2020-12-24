@@ -5,7 +5,7 @@ export default function AudioMemo() {
     return (
         <>
             {scrSounds.map((e) => ( 
-                 <audio id={e.id} src={e.soundscr} preload="auto" controls="none"></audio>
+                 <audio id={e.id} src={e.soundscr} controls="none"></audio>
             ))}
         </>
     )
