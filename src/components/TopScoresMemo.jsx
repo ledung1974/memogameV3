@@ -19,7 +19,6 @@ export default function TopScoresMemo() {
                 return setIsUpdated(!isUpdated);
             }
         };
-        alert("Top");
         updateGameStatus(newGameStatus);
     }, [isUpdated]);
 

@@ -79,7 +79,6 @@ export default function DivImageCard(props) {
         }
     }
 
-
     if (!props.cardStatus.isOnDeck) {
         return (
             <div key={props.keyCard}>
