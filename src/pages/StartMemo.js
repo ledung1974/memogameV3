@@ -32,7 +32,7 @@ export default function StartMemo(props) {
     <div className="start-container">
       <header className="start-header">
         <img src={logo} className="start-logo" alt="logo" />
-        <h1>Memo Game</h1><span>Version 3.0</span>
+        <h1>Memo Game</h1><span>Version 3.1</span>
       </header>
       <div className="start-main">
         {isShowSignUp ? <Signup hideSignUp={hideSignUp} />
