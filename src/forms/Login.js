@@ -18,7 +18,7 @@ export default function Login(props) {
 
     return (
         <div className="login-container" onSubmit={handleSubmitLogin}>
-            <form className="form-login">
+            <form className="form-login col-1">
                 <div className="input-div">
                     <div className="input-inline">
                         <img src="./images/email.png" alt="email" />
@@ -45,15 +45,15 @@ export default function Login(props) {
                             onChange={(event) => setPassword(event.target.value)}
                         />
                     </div>
-
+                    <button disabled={isSubmitting} onClick={props.showResetPassword} id="reset-password-button">Reset password ?</button>
                 </div>
                 <div>
-                    <button className="button-login" type="submit" disabled={isSubmitting}>Login</button>
+                    <button className="button-login marpad1 marpad-1" type="submit" disabled={isSubmitting}>Login</button>
                 </div>
-                <button disabled={isSubmitting} onClick={props.showResetPassword} id="reset-password-button">Reset password ?</button>
+                
             </form>
-            <div className="sign-up-button">
-                <span>Please <button id="sign-up-link" disabled={isSubmitting} onClick={props.showSignUp}> Sign Up </button> for the first time to play</span>
+            <div className="sign-up-link">
+                <span>Please <button id="sign-up-button" disabled={isSubmitting} onClick={props.showSignUp}> Sign Up </button> for the first time to play</span>
             </div>
         </div>
     )

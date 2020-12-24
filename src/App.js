@@ -15,10 +15,10 @@ export default function App() {
           <PlayerProvider>
             <Pages />
             <AlertMemo />
-            <AudioMemo />
           </PlayerProvider>
         </GameProvider>
       </StatusProvider>
+      <AudioMemo />
     </>
   );
 }

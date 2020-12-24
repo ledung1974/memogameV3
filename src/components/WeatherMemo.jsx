@@ -57,7 +57,7 @@ export default function WeatherMemo() {
             </div>
             <div className="dropdown">
                 <button className="dropbtn">{cityName}</button>
-                <div class="dropdown-content" >
+                <div className="dropdown-content" >
                     <input type="text"
                         maxLength="20"
                         value={inputCityName}

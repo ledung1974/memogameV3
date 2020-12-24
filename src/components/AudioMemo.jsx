@@ -4,8 +4,8 @@ import {scrSounds} from '../js/sound.js';
 export default function AudioMemo() {
     return (
         <>
-            {scrSounds.map((e) => ( 
-                 <audio id={e.id} src={e.soundscr} controls="none"></audio>
+            {scrSounds.map((e,i) => ( 
+                 <audio key={i} id={e.id} src={e.soundscr} controls="none"></audio>
             ))}
         </>
     )
