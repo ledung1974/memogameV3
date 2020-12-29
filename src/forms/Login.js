@@ -17,7 +17,7 @@ export default function Login(props) {
     }
 
     return (
-        <div className="login-container" onSubmit={handleSubmitLogin}>
+        <div className="login-container wd-1" onSubmit={handleSubmitLogin}>
             <form className="form-login col-1">
                 <div className="input-div">
                     <div className="input-inline">
@@ -48,7 +48,7 @@ export default function Login(props) {
                     <button disabled={isSubmitting} onClick={props.showResetPassword} id="reset-password-button">Reset password ?</button>
                 </div>
                 <div>
-                    <button className="button-login marpad1 marpad-1" type="submit" disabled={isSubmitting}>Login</button>
+                    <button className="button-login marpad-1" type="submit" disabled={isSubmitting}>Login</button>
                 </div>
             </form>
             <div className="sign-up-link">

@@ -18,7 +18,7 @@ export default function ResetPassword(props) {
     }
 
     return (
-        <div className="reset-password-container">
+        <div className="reset-password-container wd-1">
             <form className="form-reset-password" onSubmit={(event) => handleSubmitSentResetEmail(event)}>
                 <h2>Request reset password by email</h2>
                 <div className="input-div">

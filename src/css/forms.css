@@ -42,30 +42,38 @@
 .login-container {
   display: flex;
   flex-direction: column;
-  width: 28vw;
   margin: 2vh auto;
   justify-self: center;
 }
 
 /* For mobile phones and Ipad */
+[class*="wd-"] {
+  width: 40vh;
+}
+
 [class*="col-"] {
   grid-template-columns:100%;
 }
 
 [class*="marpad-"] {
   margin: 1vh 0px;
-  padding: 5px 0px;
+  padding: 1vh 0px;
+  font-size: calc(1.8vh + 1vw);
 }
 
 @media only screen and (min-width: 1024px) {
   /* For desktop: */
+  .wd-1{
+    width: 28vw;
+  }
   .col-1 {
     grid-template-columns: 80% 20%;
   }
   .marpad-1 {
     height: 80%;
     margin: 0px;
-    padding: 0px;
+    padding: 3px 0px;
+    font-size: calc(0.8vw + 1vh);
   }
 }
 
@@ -76,7 +84,6 @@
 
 .button-login {
   width: 100%;
-  font-size: calc(0.8vw + 1vh);
   color: white;
   background-color: rgb(187, 59, 0);
 }
@@ -140,7 +147,6 @@
 
 .form-signup,
 .form-reset-password {
-  width: 28vw;
   margin: 1vh 0px 0px 0px;
   padding: 1vh 2vw 1vh 1vw;
   justify-self: center;

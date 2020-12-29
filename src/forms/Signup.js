@@ -20,7 +20,7 @@ export default function Signup(props) {
     }
 
     return (
-        <div className="signup-container">
+        <div className="signup-container wd-1">
             <form className="form-signup" onSubmit={(event)=>handleSubmitSignUp(event)}>
                 <h2>Sign up</h2>
                 <div className="input-div">
