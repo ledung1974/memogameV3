@@ -8,6 +8,14 @@ img {
   -webkit-user-drag:none;
 }
 
+/*@media only screen and (orientation:portrait){
+  .main-container {
+    height: 100%;
+    transform: rotate(90deg);
+  }
+}
+*/
+
 /* Styles for DeckMemo -------*/
 .div-deck {
   width: 100%;

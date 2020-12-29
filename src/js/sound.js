@@ -44,11 +44,18 @@ export const scrSounds = [
 export function soundGame(eventname) {
     let obj = scrSounds.find(element => element.eventname===eventname);
     if (obj){
-        let s = document.getElementById(obj.id);
-        try {
-            s.play();
-        } catch (error) {
-            console.log(error);            
-        }
+    
+    let promise = document.getElementById(obj.id).play();
+    if (promise !== undefined) {
+        promise.catch(error => {
+            console.log(error);
+        // Auto-play was prevented
+        // Show a UI element to let the user manually start playback
+    }).then(() => {
+        // Auto-play started
+    });
+}    
+    
+    
     }    
 }

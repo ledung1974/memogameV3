@@ -54,7 +54,7 @@ export default function ClockMemo() {
     if (currentStatus.isGameOver) {
         return (
             <div className="div-gameover">
-                <p>GAME OVER !</p>
+                <p>GAME OVER!</p>
                 <span className="digit-clock" id="clock_gameover">{timeLimit}</span>
                 <br />
                 <label>Your clicks: {gameStatus.yourClicks} </label>

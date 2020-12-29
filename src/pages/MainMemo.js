@@ -27,6 +27,8 @@ export default function MainMemo() {
         //Toggle isRestart to change state of MainMemo component --> re-render
     }
 
+   
+    
     return (
         <div className="main-container">
             <HeaderMemo />
