@@ -7,7 +7,7 @@ export default function Login(props) {
     //for Enabled or Disabled inputs and buttons during async/await
     const [isSubmitting, setIsSubmitting] = useState(false);
         
-    const { player, handleLogin } = FromPlayerProvider();
+    const {handleLogin } = FromPlayerProvider();
 
     const handleSubmitLogin = async (event) => {
         setIsSubmitting(true);
