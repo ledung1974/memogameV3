@@ -44,8 +44,8 @@ export default function TopScoresMemo() {
                 : <h5>- Hard Level -</h5>
             }
             <div className="div-scroll-topscores">
-                {topScores.map((element) => (
-                    <div>
+                {topScores.map((element,i) => (
+                    <div key={i.toString()}>
                         {element.uid === player.uid ? <p className="top-name">&#128525; {element.name}</p>
                             : <p className="top-name">{element.name}</p>
                         }

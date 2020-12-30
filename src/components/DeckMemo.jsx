@@ -11,12 +11,12 @@ export default function DeckMemo() {
         level === 52 ?
             <div className="divgrid-full-deck">
                 {cardsStatus.map((element, i) => (
-                    <DivImageCard keyCard={i} cardStatus={element} level={level}/>
+                    <DivImageCard key={i.toString()} keyCard={i} cardStatus={element} level={level}/>
                 ))}
             </div>
             : <div className="divgrid-easy-deck">
                 {cardsStatus.map((element, i) => (
-                    <DivImageCard keyCard={i} cardStatus={element} level={level}/>
+                    <DivImageCard key={i.toString()} keyCard={i} cardStatus={element} level={level}/>
                 ))}
             </div>
     )

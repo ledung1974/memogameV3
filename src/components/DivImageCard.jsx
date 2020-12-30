@@ -82,9 +82,8 @@ export default function DivImageCard(props) {
 
     if (!props.cardStatus.isOnDeck) {
         return (
-            <div key={props.keyCard}>
+            <div>
                 <img
-                    key={props.keyCard + 100}
                     className="image-goodjob"
                     src="../images/goodjob.png"
                     alt="goodjob"
@@ -94,9 +93,8 @@ export default function DivImageCard(props) {
     } else {
         if (!props.cardStatus.isShowed) {
             return (
-                <div key={props.keyCard}>
+                <div>
                     <img
-                        key={props.keyCard + 100}
                         className="image-card"
                         src="../images/back.png"
                         alt="back"
@@ -108,9 +106,8 @@ export default function DivImageCard(props) {
         else {
             let scr = '../images/' + props.cardStatus.cardName + '.png';
             return (
-                <div key={props.keyCard}>
+                <div>
                     <img
-                        key={props.keyCard + 100}
                         className="image-card"
                         src={scr}
                         alt={props.cardStatus.cardName}
