@@ -43,13 +43,14 @@
   height: 100%;
 }
 
-.alert-content-div pre {
-  width: 100%;
+.alert-content-div p {
+  width: 95%;
   text-align: left;
   font-size: 2.5vh;
   margin: 0px 1vw;
   padding: 0px;
   font-family: "Times New Roman", Times, serif;
+  white-space:pre-wrap;
 }
 
 .alert-button-div {

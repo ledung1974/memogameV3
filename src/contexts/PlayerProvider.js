@@ -65,10 +65,12 @@ export default function PlayerProvider(props) {
             newShuffleCards();
             clearError();
             updateStatus({ isLoggedIn: true }, null); //At last --> Re-Render to show MainMemo
+            return true;
         } catch (error) {
             //console.log(error);
             updateError(error, "Can't login by error");
             setPlayer(null);
+            return false;
         }
     };
 
