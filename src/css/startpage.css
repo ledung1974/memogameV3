@@ -65,5 +65,7 @@ footer{
 footer > p {
   color: white;
   text-align: center;
-  font-size: 2.2vh;
+  font-size: 2vh;
+  padding: 2px 0px;
+  margin: 0px;
 }
