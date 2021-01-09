@@ -12,9 +12,11 @@ export default function WeatherMemo() {
     }, [cityName]);
 
     async function getWeatherApi() {
-        const appid = "ed52e6534d6e61e9cc976b588820c835";
+        const appid = process.env.REACT_APP_OPEN_WEATHER_MAP_APPID;
+        const url = process.env.REACT_APP_OPEN_WEATHER_MAP_URL;
+        console.log(url);
         try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${appid}`)
+            const response = await fetch(`${url}?q=${cityName}&units=metric&appid=${appid}`)
             const infor = await response.json();
             if (infor.cod==="404"){
                 setInputCityName("City not found !");
