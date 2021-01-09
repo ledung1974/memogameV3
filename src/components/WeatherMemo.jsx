@@ -14,7 +14,6 @@ export default function WeatherMemo() {
     async function getWeatherApi() {
         const appid = process.env.REACT_APP_OPEN_WEATHER_MAP_APPID;
         const url = process.env.REACT_APP_OPEN_WEATHER_MAP_URL;
-        console.log(url);
         try {
             const response = await fetch(`${url}?q=${cityName}&units=metric&appid=${appid}`)
             const infor = await response.json();
@@ -23,7 +22,7 @@ export default function WeatherMemo() {
                 setCityName(defaultCity)
             }
             else{
-                setTemp(infor.main.temp)
+                setTemp(Math.round(infor.main.temp));
                 setInputCityName("");
             }
         }
@@ -70,6 +69,8 @@ export default function WeatherMemo() {
                     />
                     <button value="Saskatoon" onClick={handleSelectCity}>Saskatoon</button>
                     <button value="Hanoi" onClick={handleSelectCity}>Hanoi</button>
+                    <button value="Vancouver" onClick={handleSelectCity}>Vancouver</button>
+                    <button value="Tokyo" onClick={handleSelectCity}>Tokyo</button>
                 </div>
             </div>
 

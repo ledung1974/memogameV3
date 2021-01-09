@@ -5,17 +5,16 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
 
-
 const firebaseConfig = {
     //Copy and paste from Register App Firebase
-    apiKey: "AIzaSyB44qHsrc7gPiGKXuHTytk2mFz98_BjTOE",
-    authDomain: "memogame-9a961.firebaseapp.com",
-    databaseURL: "https://memogame-9a961.firebaseio.com",
-    projectId: "memogame-9a961",
-    storageBucket: "memogame-9a961.appspot.com",
-    messagingSenderId: "327380136771",
-    appId: "1:327380136771:web:9b0f4cf05fec32791435f6",
-    measurementId: "G-SQ6BW923LE",
+    apiKey: process.env.REACT_APP_FB_API_KEY,
+    authDomain: process.env.REACT_APP_FB_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_FB_DATABASE_URL,
+    projectId: process.env.REACT_APP_FB_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_FB_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_FB_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_FB_APP_ID,
+    measurementId:process.env.REACT_APP_FB_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
