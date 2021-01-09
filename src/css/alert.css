@@ -7,7 +7,6 @@
   z-index: 2;
 }
 .alert-div {
-  width: 30%;
   height: 40%;
   display: grid;
   grid-template-rows: 20% 60% 20%;
@@ -63,9 +62,8 @@
 }
 
 .alert-button-div button {
-  width: 8vw;
   margin: 0px auto;
-  padding: 0.8vh 0px;
+  padding: 0.8vh 2.5vw;
   font-size: 2vh;
   color: white;
   background-color: rgb(1, 88, 104);

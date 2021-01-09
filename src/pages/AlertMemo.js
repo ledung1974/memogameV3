@@ -21,7 +21,7 @@ export default function AlertMemo() {
     if (alertInfor.isShowedAlert) {
         return (
             <div className="alert-container">
-                <div className="alert-div">
+                <div className="alert-div wd-1">
                     <div className="alert-header-div">
                         <h2>{alertInfor.alertHeader}</h2>
                     </div>
