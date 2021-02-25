@@ -21,7 +21,7 @@ export default function HeaderMemo() {
         });
     }
 
-    const onClickPlyerName = () => {
+    const onClickPlayerName = () => {
         updateAlert({
             isShowedAlert: true,
             alertHeader: "Your MemoGame information!",
@@ -46,7 +46,7 @@ Your best click in Hard level:[ ${player.bestHardClicks}]
             <img className="guide-image" src="../images/pairofcard.png" alt="pairofcard" />
             <div className="div-name-signout">
                 <button type="button" onClick={onSignOutClick}>Sign Out</button>
-                <p className="header_playerName" onClick={onClickPlyerName}>{player.playerName}</p>
+                <p className="header_playerName" onClick={onClickPlayerName}>{player.playerName}</p>
             </div>
         </header>
 
